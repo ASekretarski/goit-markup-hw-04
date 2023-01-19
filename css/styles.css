@@ -10,6 +10,7 @@
     --secondary-bgrd-color: #F5F4FA;
     --tertiary-bgrd-color: #ECECEC;
     --quaternary-bgrd-color: #EEEEEE;
+    --quinary-bgrd-color: rgba(255, 255, 255, 10%)
 }
     
 /* global */
@@ -96,7 +97,7 @@ body {
     font-weight: 500;
     background-color: var(--primary-brand-color);
     color: var(--tertiary-text-color);
-
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.18), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .address li {
@@ -109,7 +110,7 @@ body {
 }
 
 .link:hover,
-.link:active {
+.link:focus {
     color: var(--primary-brand-color);
 }
 
@@ -169,6 +170,11 @@ body {
 
 .headline .heading {
     letter-spacing: 0.06em;
+}
+
+.footer .heading {
+    font-size: 14px;
+    color: var(--tertiary-text-color);
 }
 
 /* background colors */
@@ -375,7 +381,8 @@ padding: 0px 15px;
     border-radius: 4px;
 }
 
-.client-logo:hover {
+.client-logo:hover,
+.client-logo:focus {
     padding: 15px 31px;
     border: 1px solid var(--primary-brand-color);
     border-radius: 4px;
@@ -389,7 +396,8 @@ padding: 0px 15px;
     fill: var(--quaternary-brand-color);
 }
 
-.our-clients .icon:hover {
+.our-clients .icon:hover,
+.our-clients .icon:focus {
     fill: var(--primary-brand-color);
 }
 
@@ -400,6 +408,63 @@ padding: 0px 15px;
 .header .link {
     fill: var(--secondary-text-color);
 }
-.header .link:hover {
+.header .link:hover,
+.header .link:focus {
      fill: var(--primary-brand-color);
+}
+
+.contact.flex {
+    gap: 0px;
+    align-items: center;
+}
+
+.icon-card {
+    background-color: var(--secondary-brand-color);
+    border-radius: 4px;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+}
+
+.about .icon {
+    fill: red;
+}
+
+.our-team .socials {
+    padding: 16px 32px 0px;
+}
+
+.our-team .socials-icon {
+    padding: 12px;
+    fill: var(--quaternary-brand-color);
+}
+
+.footer .socials-icon {
+    padding: 12px;
+    fill: var(--tertiary-text-color);
+    background-color: var(--quinary-bgrd-color);
+    border-radius: 50%;
+}
+
+.socials-icon:hover,
+.socials-icon:focus {
+    background-color: var(--primary-brand-color);
+    border-radius: 50%;
+    fill: var(--tertiary-text-color);
+}
+
+.footer .socials .flex {
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.footer > .flex {
+    gap: 70px;
+}
+
+.footer .heading {
+    padding: 12px 0px 20px;
+}
+
+.example-card:hover {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
